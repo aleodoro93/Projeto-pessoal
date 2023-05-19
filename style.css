@@ -6,7 +6,7 @@
 }
 
 body{
-    background-image: url(carro.jpg);
+    background-image: url(Imagens/carro.jpg);
     backdrop-filter: blur(6px);
     background-size: cover;
     
@@ -49,7 +49,7 @@ body{
 
 
 .front {
-    background: url(eu\ andre.JPG);
+    background: url(Imagens/eu\ andre.JPG);
     background-size: cover;
     background-position: center;
     padding: 60px 40px;
@@ -173,5 +173,9 @@ body{
     transform: rotateY(180deg)
 
 }
+
+
+    
+
 
 
