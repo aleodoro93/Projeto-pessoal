@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(carro.jpg);
+    backdrop-filter: blur(6px);
+    background-size: cover;
+    
+
+
+}
+.container {
+    width: 100%;
+    min-height: 100vh;
+    
+    padding: 10px;
+}
+
+.card {
+    width: 350px;
+    height: 515px;
+    margin: 220px auto 0;
+    
+
+}
+
+.card-inner {
+
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+
+}
+
+.front, .back {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    position: absolute;
+    backface-visibility: hidden;
+    
+}
+
+
+.front {
+    background: url(eu\ andre.JPG);
+    background-size: cover;
+    background-position: center;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #fff;
+
+}
+
+.front h2 {
+    font-weight: 500;
+}
+
+.front p {
+    color: #ccc;
+    font-size: 13px;
+
+}
+
+.front button {
+    width: 120px;
+    border: 1px solid #fff;
+    background: transparent;
+    border-radius: 50px;
+    padding: 8px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    color: aquamarine;
+}
+
+.back {
+    background: #fff;
+    color: #333;
+    padding: 20px 40px;
+    transform: rotateY(180deg);
+}
+
+.back h1 {
+    font-size: 50px;
+    line-height: 55px;
+    margin-bottom: 10px;
+
+}
+
+.back h1 span {
+    font-weight: 400;
+
+}
+
+.back p {
+    font-size: 14px;
+}
+
+.back p span {
+    font-weight: 700;
+}
+
+.back img {
+    width: 100px;
+}
+
+.row {
+ display: flex;
+ align-items: center;
+ margin: 5px;   
+}
+
+.col {
+    flex: 1;
+    text-align: center;
+    color: #555;
+    font-size: 15px;
+    margin: 50px 1px;
+
+}
+
+.col h2 {
+    font-size: 15px;
+
+}
+
+.back button {
+    background: #0062ad;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    padding: 10px 15px;
+    border-radius: 30px;
+    font-size: 14px;
+    margin: 5px 5px;
+    align-items: center;
+    justify-content:center;
+    box-shadow:0 8px 10px rgba(12, 112, 155, 0.3);
+}
+
+.sociais a {
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 5px rgba(9, 176, 218, 0.133);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px 26px;
+    
+
+}
+
+.back a img {
+    width: 60%;
+
+}
+
+#git {
+    width: 90%;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg)
+
+}
+
+
