@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+
+    background-image: linear-gradient(to left, blue, orangered, yellow);
+    background-size: 300% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: degrade 5s infinite alternate;
+
+
+
+
+
+}
+
+@keyframes degrade {
+    0% {
+        background-position-x: 0%;
+
+    }
+
+    100% {
+        background-position-x: 100%;
+    }
+}
+
+
+
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+
+    padding: 10px;
+}
+
+.card {
+    width: 390px;
+    height: 590px;
+    margin: 220px auto 0;
+
+
+}
+
+.card-inner {
+
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+
+}
+
+.front,
+.back {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    position: absolute;
+    backface-visibility: hidden;
+
+}
+
+
+.front {
+    background: url(/Imagens/eu\ andre.JPG);
+    background-size: cover;
+    background-position: center;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #fff;
+
+
+}
+
+.front h2 {
+    font-weight: 900;
+    color:rgb(255, 255, 255)
+    
+    
+}
+
+.front p {
+    color: #9ebed1;
+    font-size: 17px;
+    font-weight: 800;
+
+}
+
+
+
+
+
+.front button {
+    width: 250px;
+    border: 15px #fff;
+    background: transparent;
+    border-radius: 50px;
+    padding: 20px 30px;
+    margin: 5px 25px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-align: center;
+    font-weight: 750;
+    letter-spacing: 2px;
+    font-style:italic;  
+    color: rgb(210, 255, 10);
+}
+
+.back {
+    background: #fff;
+    color: #333;
+    padding: 20px 40px;
+    transform: rotateY(180deg);
+}
+
+.back h1 {
+    font-size: 30px;
+    line-height: 70px;
+    margin-bottom: 1px;
+
+}
+
+.back h1 span {
+    font-weight: 400;
+
+}
+
+.back p {
+    font-size: 21px;
+}
+
+.back p span {
+    font-weight: 700;
+}
+
+.back img {
+    width: 100px;
+}
+
+
+
+
+
+
+.card:hover .card-inner {
+    transform: rotateY(180deg)
+}
+
+.back button {
+    color: rgb(242, 202, 44);
+    font-weight: 900;
+    border-radius: 50px;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    
+    
+   
+}
