@@ -128,7 +128,7 @@ body {
     font-size: 34px;
     line-height: 70px;
     margin: 35px;
-    border-right:  2px solid rgba(red, green, blue, alpha);
+    
 
 
 
@@ -146,11 +146,6 @@ body {
     margin: 30px;
 
 }
-
-
-
-
-
 
 .card:hover .card-inner {
     transform: rotateY(180deg)
