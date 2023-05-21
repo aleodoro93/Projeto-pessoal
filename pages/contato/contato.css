@@ -85,16 +85,18 @@ body {
 }
 
 .front h1 {
-    font-weight: 900;
-    color:rgb(255, 255, 255)
+    font-weight: 740;
+    color:rgb(255, 255, 255);
+    text-shadow: 3px 4px 5px rgb(5, 102, 247);
     
     
 }
 
 .front p {
-    color: #929291;
+    color: #9ebed1;
     font-size: 17px;
     font-weight: 800;
+    text-shadow: 3px 3px 5px rgb(8, 61, 206);
 
 }
 
@@ -102,50 +104,84 @@ body {
 
 
 
-.front h2 {
-    
-    color: yellow;
-
-    padding: 10px;
-    margin: 30px;
+.front button {
+    width: 250px;
+    border: 15px #fff;
+    background: transparent;
+    border-radius: 50px;
+    padding: 20px 30px;
+    margin: 5px 25px;
+    color: rgb(255, 255, 255);
     font-size: 20px;
     text-align: center;
     font-weight: 750;
     letter-spacing: 2px;
     font-style:italic;  
-    
+    color: rgb(210, 255, 10);
 }
 
 .back {
-    background: #fff;
-    color: #333;
-    padding: 20px 40px;
+    background-color: #fff;
+    padding: 10px 45px;
     transform: rotateY(180deg);
 }
 
 .back h1 {
-    font-size: 30px;
-    line-height: 70px;
-    margin-bottom: 1px;
+    width: 100px 150px;
+    height: 100px;
+    text-align: center;
+    
+    
+}
+
+.back form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+    
+}
+
+.back form {
+
+    text-align: center;
+    background-color: rgb(132, 129, 129);
+    border-radius: 30px;
+    width: 100%;
+    box-shadow: 2px 2px 30px black;
+    
+
+    
+}
+
+.back form input {
+    outline: none;
+    padding: 10px;
+    border: 0;
+    font-size: 15px;
+    transition: all 0.10s;
 
 }
 
-.back h1 span {
-    font-weight: 400;
+form input:focus {
+    border-radius: 50px;
+}
+
+form textarea {
+    padding: 10px;
+
+    outline: none;
+    border: 0;
+    font: size 15px; ;
+    margin-bottom: 30px;
+    transition: all 0.10s;
 
 }
 
-.back p {
-    font-size: 21px;
+form textarea:focus {
+    border-radius: 20px;
 }
 
-.back p span {
-    font-weight: 700;
-}
 
-.back img {
-    width: 100px;
-}
 
 
 
@@ -156,22 +192,27 @@ body {
     transform: rotateY(180deg)
 }
 
+
+    
+    
+   
+
+
 .back button {
     color: rgb(255, 255, 255);
-    font-weight: 900;
-    border-radius: 50px;
-    margin: 20px;
-    padding: 20px;
+    font-weight: 700;
+    border-radius: 40px;
+    margin: 10px 72px;
+    padding: 15px;
     background-image: linear-gradient(to left, blue, orangered, yellow);
     animation: button 5s infinite alternate;
     background-size: 300% 100%;
-    transition:  all 1s;
+    transition: all 0.7s;
 }
 
 .back button:hover {
-    
-    background: rgb(10, 183, 252);
-    color: white;
+
+    background: rgb(40, 39, 40);
 }
 
 @keyframes button {
