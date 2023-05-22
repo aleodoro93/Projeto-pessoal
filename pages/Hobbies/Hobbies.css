@@ -73,7 +73,7 @@ body {
 
 
 .front {
-    background: url(/pages/Imagens/andre.JPG);
+    background: url(../Imagens/andre.JPG);
     background-size: cover;
     background-position: center;
     padding: 60px 40px;
