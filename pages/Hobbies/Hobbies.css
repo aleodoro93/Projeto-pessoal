@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+/* aqui começa o meu corpinho e suas medidas e background */
 body {
     width: 100%;
 
@@ -17,6 +18,7 @@ body {
 
 
 
+/* animação do meu dragrade */
 
 
 }
@@ -35,6 +37,7 @@ body {
 
 
 
+/* aqui começa as medidas do meu conteudo */
 .container {
     width: 100%;
     min-height: 100vh;
@@ -42,6 +45,7 @@ body {
     padding: 10px;
 }
 
+/* aqui as do meu card */
 .card {
     width: 390px;
     height: 590px;
@@ -50,6 +54,7 @@ body {
 
 }
 
+/* conteudo do card */
 .card-inner {
 
     width: 100%;
@@ -61,6 +66,7 @@ body {
 
 }
 
+/* frente e verso do card */
 .front,
 .back {
     width: 100%;
@@ -72,6 +78,7 @@ body {
 }
 
 
+/* conteudo da parte frontal */
 .front {
     background: url(../Imagens/andre.JPG);
     background-size: cover;
@@ -84,6 +91,8 @@ body {
 
 
 }
+
+/* conteudo do texto do card */
 
 .front h2 {
     font-weight: 900;
@@ -98,7 +107,7 @@ body {
 }
 
 
-
+/* um botao que nao e botao */
 
 
 .front button {
@@ -117,6 +126,8 @@ body {
     color: aqua;
 }
 
+
+/* parte de tras do card */
 .back {
     background: #fff;
     color: #333;
@@ -147,9 +158,12 @@ body {
 
 }
 
+/* animação do card */
 .card:hover .card-inner {
     transform: rotateY(180deg)
 }
+
+/* botao de tras do card */
 
 .back button {
     color: rgb(255, 255, 255);
@@ -165,7 +179,7 @@ body {
 
 
 }
-
+ /* animçao do botao de tras */
 @keyframes button {
     0% {
         background-position-x: 0%;
@@ -178,6 +192,8 @@ body {
     }
 }
 
+
+/* estilização da lista */
 ul>li {
 
     text-align: center;

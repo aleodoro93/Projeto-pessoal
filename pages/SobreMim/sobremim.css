@@ -5,6 +5,8 @@
     box-sizing: border-box;
 }
 
+
+/* estilização do meu body justamente com background */
 body {
     width: 100%;
 
@@ -21,6 +23,7 @@ body {
 
 }
 
+/* animação do degrade em background */
 @keyframes degrade {
     0% {
         background-position-x: 0%;
@@ -34,7 +37,7 @@ body {
 
 
 
-
+/*  ajustes do projeto total */
 .container {
     width: 100%;
     min-height: 100vh;
@@ -42,6 +45,7 @@ body {
     padding: 10px;
 }
 
+/* estilização do card  */
 .card {
     width: 390px;
     height: 590px;
@@ -49,7 +53,7 @@ body {
 
 
 }
-
+ /* conteudo do card */
 .card-inner {
 
     width: 100%;
@@ -60,6 +64,7 @@ body {
 
 }
 
+/* aqui começa a estilização do conteudo do cart, texto e botoes */
 .front,
 .back {
     width: 100%;
@@ -84,6 +89,7 @@ body {
 
 }
 
+/*  escreve escreve estilização de textos */
 .front h1 {
     font-weight: 900;
     color:rgb(255, 255, 255)
@@ -116,6 +122,8 @@ body {
     
 }
 
+
+/* opa meu consagrado, aqui é a parte de tras. Vai descendo ai */
 .back {
     background: #fff;
     color: #333;
@@ -152,7 +160,7 @@ body {
 
 
 
-
+/* money flip aqui q o card gira e fica de costa sorta alek */
 .card:hover .card-inner {
     transform: rotateY(180deg)
 }
@@ -175,6 +183,7 @@ body {
     color: white;
 }
 
+/* animação de giro do card sorta alek */
 @keyframes button {
     0% {
         background-position-x: 0%;

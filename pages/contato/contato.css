@@ -6,6 +6,8 @@
 }
 
 body {
+
+    /* corpo e ajustes do background em degrade */
     width: 100%;
 
     background-image: linear-gradient(to left, blue, orangered, yellow);
@@ -20,7 +22,7 @@ body {
 
 
 }
-
+/* animação do degrade em background */
 @keyframes degrade {
     0% {
         background-position-x: 0%;
@@ -34,22 +36,24 @@ body {
 
 
 
-
+/* ajustes do meu container */
 .container {
     width: 100%;
     min-height: 100vh;
 
     padding: 10px;
 }
-
+/* ajustes de estilização do meu card */
 .card {
     width: 390px;
-    height: 590px;
+    height: 600px;
     margin: 220px auto 0;
+    
 
 
 }
 
+/* conteudo de dentro do card e suas dependecias */
 .card-inner {
 
     width: 100%;
@@ -59,7 +63,7 @@ body {
     transform-style: preserve-3d;
 
 }
-
+/* frente e costas  */
 .front,
 .back {
     width: 100%;
@@ -70,7 +74,7 @@ body {
 
 }
 
-
+/* ajustes de frente e seu background do card */
 .front {
     background: url(../Imagens/andre.JPG);
     background-size: cover;
@@ -80,21 +84,20 @@ body {
     flex-direction: column;
     justify-content: flex-end;
     color: #fff;
-
-
-}
-
-.front h1 {
     font-weight: 740;
     color:rgb(255, 255, 255);
     text-shadow: 3px 4px 5px rgb(5, 102, 247);
-    
-    
+
+
 }
+
+    
+    
+    /* ajustes dos paragrafos da parte da frente */
 
 .front p {
     color: #9ebed1;
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 800;
     text-shadow: 3px 3px 5px rgb(8, 61, 206);
 
@@ -103,32 +106,22 @@ body {
 
 
 
-
-.front button {
-    width: 250px;
-    border: 15px #fff;
-    background: transparent;
-    border-radius: 50px;
-    padding: 20px 30px;
-    margin: 5px 25px;
-    color: rgb(255, 255, 255);
-    font-size: 20px;
-    text-align: center;
-    font-weight: 750;
-    letter-spacing: 2px;
-    font-style:italic;  
-    color: rgb(210, 255, 10);
+/* alisa meu card, paragrafo da parte onde instiga  a virar o card mensagem de interação */
+.alisa-o-card {
+   margin: 10px 20px;
+     
 }
 
+/* parte de tras do card */
 .back {
     background-color: #fff;
-    padding: 10px 45px;
+    padding: 20px 40px;
     transform: rotateY(180deg);
 }
 
 .back h1 {
-    width: 100px 150px;
-    height: 100px;
+    width: 1px 10px;
+    height: 40px;
     text-align: center;
     
     
@@ -138,17 +131,17 @@ body {
     display: flex;
     flex-direction: column;
     font-weight: 300;
+    margin: 4px;
     
 }
 
 .back form {
-
+    padding: 15px;
     text-align: center;
     background-color: rgb(132, 129, 129);
     border-radius: 30px;
     width: 100%;
     box-shadow: 2px 2px 30px black;
-    
 
     
 }
@@ -159,16 +152,20 @@ body {
     border: 0;
     font-size: 15px;
     transition: all 0.10s;
+    text-align: center;
+    margin: 5px;
 
 }
 
+
+/* estilização do form e seus efeitinhos */
 form input:focus {
     border-radius: 50px;
 }
 
 form textarea {
     padding: 10px;
-
+    text-align: center;
     outline: none;
     border: 0;
     font: size 15px; ;
@@ -176,6 +173,7 @@ form textarea {
     transition: all 0.10s;
 
 }
+
 
 form textarea:focus {
     border-radius: 20px;
@@ -199,10 +197,11 @@ form textarea:focus {
 
 
 .back button {
+    
     color: rgb(255, 255, 255);
     font-weight: 700;
     border-radius: 40px;
-    margin: 10px 72px;
+    margin: 10px 77px;
     padding: 15px;
     background-image: linear-gradient(to left, blue, orangered, yellow);
     animation: button 5s infinite alternate;
@@ -215,6 +214,7 @@ form textarea:focus {
     background: rgb(40, 39, 40);
 }
 
+/* mais animações */
 @keyframes button {
     0% {
         background-position-x: 0%;
